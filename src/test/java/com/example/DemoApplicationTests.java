@@ -4,6 +4,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.AfterClass;
+import org.junit.After;
+import org.junit.Ignore;
+
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -16,9 +25,7 @@ public class DemoApplicationTests {
 	@Test
         public void shouldAnswerWithTrue()
         {
-	logger.error("Starting App");
         assertTrue( true );
-	logger.error("Closing App");
         }
 
 	@Test
@@ -33,6 +40,7 @@ public class DemoApplicationTests {
         assertTrue( true );
         }
 
+	@Ignore
 	@Test
         public void shouldAnswerWithTrue4()
         {
@@ -43,17 +51,6 @@ public class DemoApplicationTests {
         public void shouldAnswerWithTrue5()
         {
         assertTrue( false );
-        }
-
-
-        @BeforeClass public static void initialize() {
-        logger.error("Starting Tests");
-        }
-
-        @After public void ending() {
-        logger.error("ending tests");
-        }
-
-
+	}
 
 }
