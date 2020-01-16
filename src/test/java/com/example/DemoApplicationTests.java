@@ -47,6 +47,7 @@ public class DemoApplicationTests {
         assertTrue( false );
         }
 
+	@Ignore
 	@Test
         public void shouldAnswerWithTrue5()
         {
