@@ -31,7 +31,7 @@ public class DemoApplicationTests {
 	@Test
         public void shouldAnswerWithTrue2()
         {
-        assertTrue( true );
+        assertTrue( false );
         }
 
 	@Test
